@@ -1,0 +1,5 @@
+SELECT bikeid, sum (duration_minutes) as Duration
+ FROM `bigquery-public-data.austin_bikeshare.bikeshare_trips` 
+where bikeid is not null
+Group by bikeid
+order by Duration desc;
