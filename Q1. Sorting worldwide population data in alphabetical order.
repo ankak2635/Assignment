@@ -1,3 +1,3 @@
 SELECT country as Country_Name, year_2018 as Population
 FROM `bigquery-public-data.world_bank_global_population.population_by_country`  
-Order by country
+Order by country;
