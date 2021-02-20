@@ -1,4 +1,4 @@
 SELECT count (table_name) as Number_of_Country, region
 FROM `bigquery-public-data.world_bank_intl_debt.country_summary` 
 WHERE (region is not null)
-group by region;
+group by region
