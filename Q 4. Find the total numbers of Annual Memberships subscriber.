@@ -1,0 +1,3 @@
+SELECT count (subscriber_type) as Annual_Memberships
+FROM `bigquery-public-data.austin_bikeshare.bikeshare_trips` 
+where (subscriber_type like 'Annual%');
