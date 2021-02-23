@@ -1,0 +1,7 @@
+SELECT sum(Total_Profit) as Profit
+  FROM `my-assignment-305516.Sales_Records.Sales` sales
+  left join 
+        `my-assignment-305516.Sales_Records.Regions` reg
+        on sales.Order_ID = reg.Order_ID
+    where reg.Sales_Channel = 'Online'
+    order by Profit;
