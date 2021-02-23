@@ -1,0 +1,8 @@
+SELECT
+  Order_Priority,
+  sum (Total_Cost) AS Cost,
+  SUM(Total_Profit) AS Profit
+FROM
+  `my-assignment-305516.Sales_Records.Sales`
+GROUP BY
+  Order_Priority;
