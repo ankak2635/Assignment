@@ -1,0 +1,7 @@
+SELECT
+  MAX(Order_Date) AS Latest_Order,
+  MIN(Order_Date) AS Oldest_Order
+FROM
+  `my-assignment-305516.Sales_Records.Sales`
+WHERE
+  (Item_Type = 'Personal Care');
