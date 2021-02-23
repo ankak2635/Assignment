@@ -1,0 +1,7 @@
+SELECT
+  Item_Type AS Products,
+  Count (Item_Type) AS Total_Orders
+FROM
+  `my-assignment-305516.Sales_Records.Sales`
+GROUP BY
+  Item_Type;
