@@ -1,7 +1,8 @@
 SELECT Country,sum (Total_Profit) as Total_Profit 
  FROM `my-assignment-305516.Sales_Records.Sales` sales
- inner join 
- `my-assignment-305516.Sales_Records.Regions` reg
- on sales.Order_ID = reg.Order_ID
+  inner join 
+    `my-assignment-305516.Sales_Records.Regions` reg
+          on sales.Order_ID = reg.Order_ID
+          
 group by reg.Country
 order by reg.Country;
